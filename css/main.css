@@ -1,0 +1,565 @@
+
+/* ------ Specifications ------ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div, p, a, span, h1, h2, h3, h4, h5, h6, input, form, button, ul, li, nav {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+/* ------ Header ------ */
+
+.header {
+    padding-top: 15px;
+    padding-bottom: 22px;
+}
+
+.navigation {
+    align-items: center;
+}
+
+.logo {
+    width: 240px;
+    align-items: center;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.fa-plug {
+    width: 51px;
+    height: 49px;
+    background: #1b3bde;
+    border-radius: 5px;
+    margin-right: 12px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.logo__text {
+    font-size: 14.55px;
+    color: #1b3bde;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.verstka {
+    font-size: 20px;
+}
+
+.menu {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.menu__item {
+    letter-spacing: 0.03em;
+}
+
+.menu__link:hover {
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+}
+
+.menu__link {
+    color: #000;
+    padding: 7px 19px;
+}
+
+.tel {
+    justify-content: end;
+    color: #000;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 5px;
+    letter-spacing: 0.02em;
+}
+
+.tel i {
+    margin-right: 6px;
+}
+
+/* ------ first section ------ */
+
+.offer {
+    background: url('../img/Прямоугольник 1.png');
+    padding-top: 90px;
+    padding-bottom: 134px;
+    box-shadow: 0px -7px 6px -4px rgba(0,0,0,0.25);
+}
+
+.professional {
+    margin-top: 106px;
+    margin-left: 36px;
+    width: 600px;
+    text-align: center;
+}
+
+.professional__heading {
+    font-size: 17px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.professional__title {
+    font-size: 45px;
+    color: #1b3bde;
+    line-height: 1.18em;
+    letter-spacing: 0.02em;
+    font-weight: 900;
+    margin-bottom: 29px;
+}
+
+.professional__date {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 13px;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 19px;
+    border-radius: 3px;
+    width: 148px;
+    background: #000;
+    margin: 0 auto;
+    margin-right: 219px;
+}
+
+.professional__item {
+}
+
+.form {
+    width: 333px;
+    padding: 38px 33px 20px 33px;
+    background: #fff;
+    margin-left: 98px;
+    border-radius: 5px;
+    letter-spacing: 0.02em;
+    box-shadow: 0px 0px 39px -4px rgba(0,0,0,0.35);
+}
+
+.form__title {
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.form__text {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.45em;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+}
+
+.form__input {
+    width: 100%;
+    border-bottom: 1px solid #bababa;
+    padding: 17px 0 14px 0;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+}
+
+.form__input:hover::-webkit-input-placeholder {
+    color: #000;
+}
+.form__input:hover:-moz-placeholder {
+    color: #000;
+}
+
+.form__input:hover {
+    border-color: #000;
+}
+
+.form__send {
+    margin-top: 24px;
+    font-size: 16px;
+    background: #4acc4d;
+    color: #fff;
+    font-weight: 900;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.form__send:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+}
+
+.form__send:active {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.65);
+}
+
+.form__text_safety {
+    font-size: 12px;
+    color: #bababa;
+}
+
+/* ------ second section ------ */
+
+.notes {
+    padding: 122px 0;
+}
+
+.block {
+    width: 469px;
+    height: 264px;
+    padding: 42px 87px 44px 57px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 66px -4px rgba(0,0,0,0.4);
+}
+
+.block__title {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.block__text {
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+    margin-bottom: 25px;
+}
+
+.numbers {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.numbers span {
+    font-size: 39px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+#distance {
+    padding-right: 30px;
+}
+
+.numbers p {
+    font-size: 13px;
+    margin-right: 42px;
+}
+
+.block-purple {
+    background: #9d6bdc;
+    color: #fff;
+    margin-right: auto;
+}
+
+.block-yellow {
+    background: #f6e23a;
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px 72px 44px 67px;
+    letter-spacing: 0.04em;
+}
+
+.block-yellow span {
+    font-size: 43px;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.block-yellow p {
+    font-size: 21px;
+}
+
+.numbers__know {
+    font-weight: 900;
+    color: #fff;
+}
+
+.questions {
+    margin-right: 123px;
+    margin-bottom: 14px;
+    letter-spacing: 0.02em;
+}
+
+.questions__title {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.questions__text {
+    width: 450px;
+    line-height: 1.6em;
+}
+
+.questions__text span {
+    font-weight: 900;
+}
+
+.firstline {
+    justify-content: center;
+    align-items: center;
+}
+
+.secondline {
+    margin-top: 66px;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondline .questions {
+    margin-left: 133px;
+    margin-right: 88px;
+    margin-bottom: 24px;
+}
+
+/* ------ third section ------ */
+
+.developement {
+    background: url('../img/Прямоугольник 1.png');
+    padding: 100px 0 105px;
+}
+
+.developement__title {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 70px;
+    line-height: 1.35em;
+    letter-spacing: 0.02em;
+}
+
+.developement__content {
+    display: flex;
+}
+
+.developement__cell {
+    display: flex;
+    letter-spacing: 0.02em;
+    margin-right: 45px;
+}
+
+.developement__cell:first-child {
+    margin-right: 75px;
+}
+
+.developement__cell span {
+    display: flex;
+    width: 82px;
+    height: 82px;
+    background: #1b3bde;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 36px;
+}
+
+.developement__text {
+    width: 220px;
+    line-height: 1.5em;
+}
+
+.developement__text h3 {
+    color: #1b3bde;
+    font-weight: 900;
+    margin: 20px 0 10px;
+    font-size: 19px;
+}
+
+/* ------ fourth section ------ */
+
+.colors {
+    padding: 92px 0 100px;
+}
+ 
+.colors__title {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    margin-bottom: 68px;
+}
+
+.boxes {
+    justify-content: space-between;
+}
+
+.boxes__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 348px;
+    height: 236px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 900;
+    box-shadow: 0px 0px 66px -4px rgba(0,0,0,0.4);
+    letter-spacing: 0.02em;
+}
+
+.boxes__content .fa {
+    font-size: 41px;
+    margin-bottom: 20px;
+}
+
+.boxes__content_green {
+    background: #4acc4d;
+    padding: 65px 50px 65px;
+}
+
+.boxes__content_blue {
+    background: #4ac7cc;
+    padding: 65px 46px 65px;
+}
+
+.boxes__content_pink {
+    background: #dc6b83;
+    padding: 65px 36px 65px;
+}
+
+.boxes__text {
+    line-height: 1.25em;
+}
+
+/* ------ fifth section ------ */
+
+.blue {
+    padding: 100px 0 108px;
+    background: url('../img/Прямоугольник 1 копия 2.png');
+}
+
+.book {
+    margin-top: 110px;
+    color: #fff;
+    text-align: center;
+    width: 640px;
+    margin-left: 44px;
+}
+
+.blue__title {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+
+.book__title {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 31px;
+    margin-top: 32px;
+    line-height: 1.35em;
+    letter-spacing: 0.02em;
+}
+
+.book__heading {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.book__item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+}
+
+.blue__form {
+    margin-left: 52px;
+}
+
+.book__date {
+    margin-right: 15px;
+    margin-left: 15px
+}
+
+/* ------ footer ------ */
+.footer{
+    padding-top: 23px;
+    padding-bottom: 22px;
+}
+
+.navigation__rights {
+    margin-left: 74px;
+    font-size: 12px;
+}
